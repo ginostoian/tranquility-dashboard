@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dongle', sans-serif;
+    height: 100vh;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #474747;
+}
+
+a {
+    color: white;
+}
+
+a:hover,
+a:focus {
+    color: wheat;
+}
+
+.top-info,
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    margin-inline: 1rem;
+}
+
+.bottom-info {
+    line-height: 0;
+    flex-wrap: wrap;
+}
+
+.mid-info {
+    text-align: center;
+    line-height: 6rem;
+}
+
+.bitcoin-display,
+.eth-display {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.eth-display {
+    margin-top: 0;
+}
+
+.time-display {
+    font-size: 8rem;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.weather-info  p {
+    text-align: center;
+    margin-block: 0;
+    line-height: 1.5rem;
+}
+
+.greeting-display {
+    font-size: 5rem;
+    margin-top: 0;
+}
+
+@media (min-width: 750px) {
+    .greeting-display {
+        font-size: 10rem;
+    }
+}
+
+.author-display {
+    align-self: center;
+}
+
+.quote-display {
+    font-size: 2.5rem;
+}
+
+.username-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+#username-input,
+.username-submit {
+    border-radius: 5px;
+    padding: .25rem;
+    border: none;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: inherit;
+}
+
+.username-submit {
+    color: #fff;
+    background-color: cadetblue;
+    padding: .3rem .9rem;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.username-submit:hover,
+.username-submit:focus {
+    background-color: wheat;
+    color: black;
+}
